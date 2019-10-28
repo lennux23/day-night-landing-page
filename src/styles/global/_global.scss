@@ -7,9 +7,7 @@ html {
   --font-color-secondary: #{theme-color('secondary', 'base')};
   --btn-bg-color: #{theme-color('accent', 'base')};
   --btn-bg-color-state: #{theme-color('accent', 'base-state')};
-  &.transition {
-    background-color: red;
-  }
+  &.transition,
   &.transition *, 
   &.transition *::before,
   &.transition *::after {

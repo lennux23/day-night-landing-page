@@ -26,7 +26,36 @@
     padding: 10px 40px;
     cursor: pointer;
     color: white;
+  }
 
+}
+
+.mountains-img{
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  z-index: -1;
+}
+
+@media(max-width:800px){
+  .content h1 {
+    font-size: 2.5em;
+  }
+  .mountains-img{
+    top: 300px;
+  }
+
+}
+
+@media(max-width:600px){
+  .container {
+    grid-template: [header-start] 50px  [header-end content-start] 1fr [content-end]/ 1fr [header-start content-start] 10fr [header-end content-end] 1fr;
+  }
+  .content h1 {
+    font-size: 2em;
+  }
+  .mountains-img{
+    top: 500px;
   }
 
 }
