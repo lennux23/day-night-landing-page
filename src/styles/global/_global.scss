@@ -7,13 +7,6 @@ html {
   --font-color-secondary: #{theme-color('secondary', 'base')};
   --btn-bg-color: #{theme-color('accent', 'base')};
   --btn-bg-color-state: #{theme-color('accent', 'base-state')};
-  &.transition,
-  &.transition *, 
-  &.transition *::before,
-  &.transition *::after {
-    transition: all 750ms !important;
-    transition-delay: 0 !important;
-  }
 }
 
 html[data-theme='dark'] {
@@ -22,13 +15,6 @@ html[data-theme='dark'] {
   --font-color-secondary: #{theme-color('secondary', 'dark')};
   --btn-bg-color: #{theme-color('accent', 'dark')};
   --btn-bg-color-state: #{theme-color('accent', 'dark-state')};
-  &.transition,
-  &.transition *, 
-  &.transition *::before,
-  &.transition *::after {
-    transition: all 750ms !important;
-    transition-delay: 0 !important;
-  }
 }
 
 h1 {
@@ -43,6 +29,13 @@ h4 {
 
 body {
   background-color: var(--bg-color);
+  &.transition,
+  &.transition *, 
+  &.transition *::before,
+  &.transition *::after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+  }
 }
 
 button {

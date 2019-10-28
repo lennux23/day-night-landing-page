@@ -1,4 +1,5 @@
 const html = document.querySelector('html')
+const body = document.querySelector('body')
 const content = document.querySelector('.content')
 
 content.addEventListener('click', e => {
@@ -10,8 +11,8 @@ content.addEventListener('click', e => {
 })
 
 const trans = () => {
-  html.classList.add ('transition');
+  body.classList.add ('transition');
   window.setTimeout(() => {
-    html.classList.remove ('transition');
+    body.classList.remove ('transition');
   }, 1000)
 }
