@@ -37,6 +37,15 @@
   z-index: -1;
 }
 
+.transition,
+.transition *,  
+.transition *::before,
+.transition *::after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+
 @media(max-width:800px){
   .content h1 {
     font-size: 2.5em;
