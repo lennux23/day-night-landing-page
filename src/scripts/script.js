@@ -12,7 +12,7 @@ content.addEventListener('click', e => {
 
 const trans = () => {
   body.classList.add ('transition');
-/*   window.setTimeout(() => {
+  window.setTimeout(() => {
     body.classList.remove ('transition');
-  }, 1000) */
+  }, 1000) 
 }
