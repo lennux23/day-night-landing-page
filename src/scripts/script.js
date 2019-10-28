@@ -13,5 +13,5 @@ const trans = () => {
   html.classList.add ('transition');
   window.setTimeout(() => {
     html.classList.remove ('transition');
-  }, 1000)
+  }, 5000)
 }
