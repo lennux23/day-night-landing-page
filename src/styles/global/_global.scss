@@ -31,15 +31,6 @@ body {
   background-color: var(--bg-color);
 }
 
-.transition,
-.transition *,  
-.transition *::before,
-.transition *::after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
-}
-
-
 button {
   background-color: var(--btn-bg-color);
   color: var(--font-color);
