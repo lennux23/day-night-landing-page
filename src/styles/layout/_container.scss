@@ -45,18 +45,17 @@
   transition-delay: 0 !important;
 }
 
-
-@media(max-width:800px){
+@include respond-to('tablet') {
   .content h1 {
     font-size: 2.5em;
   }
   .mountains-img{
     top: 300px;
   }
-
 }
 
-@media(max-width:600px){
+
+@include respond-to('mobile') {
   .container {
     grid-template: [header-start] 50px  [header-end content-start] 1fr [content-end]/ 1fr [header-start content-start] 10fr [header-end content-end] 1fr;
   }
@@ -66,5 +65,4 @@
   .mountains-img{
     top: 500px;
   }
-
 }
